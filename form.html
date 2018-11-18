@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='UTF-8'>
+<title>
+Application Form
+</title>
+<style>
+#right{
+text-align: right;
+}
+legend{
+font-weight: bolder;
+}
+table{
+text-align:right;
+}
+</style>
+<script type="text/javascript" src="js/validation.js"></script>
+</head>
+<body>
+<form name='application' method='post'>
+<fieldset style="margin-bottom:20px; width:60%">
+<legend>Personal Details</legend>
+<table>
+<tr>
+<td >First Name:</td>
+<td style="float:left;"><input type='text' name='fname' placeholder="Enter First name"></td>
+</tr>
+<tr>
+<td >Father's Name:</td>
+<td style="float:left;"><input type='text' name='father_name_personal' placeholder="Enter Father's name"></td>
+</tr>
+<tr>
+<td >Last Name:</td>
+<td style="float:left;"><input type='text' name='lname' placeholder="Enter Last name"></td>
+</tr>
+<tr>
+<td >Date of Birth:</td>
+<td style="float:left;"><input type='text' name='DOB' placeholder='DD/MM/YY'></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td style="float:left;"><input type='radio' name='gender' id="male">Male
+<input type='radio' name='gender' value="Female" id="female">Female</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td style="float:left;"><textarea name='address' rows="5"
+cols="30"></textarea></td>
+</tr>
+<tr>
+<td>E-mail ID:</td>
+<td style="float:left;"><input type='text' name='email'></td>
+</tr>
+<tr>
+<td>Mobile No:</td>
+<td style="float:left;">+91<input type='text' name='mobile' ></td>
+</tr>
+</table>
+</fieldset>
+<fieldset style="margin-bottom:30px; width:60%">
+<legend>Credit Card Details</legend>
+<table>
+<tr>
+<td>Bank Name:</td>
+<td style="float:left;"><input type='text' name='bank_name'></td>
+</tr>
+<tr>
+<td>Card Number:</td>
+<td style="float:left;"><input type='text' name='card_no'></td>
+</tr>
+<tr>
+<td>CVV:</td>
+<td style="float:left;"><input type="password" name='cvv'></td>
+</tr>
+</table>
+</fieldset>
+
+<h3>Declaration:</h3>
+<textarea readonly="readonly" rows="4" cols="60" style="margin-bottom:30px;" >
+I hereby declare that information provided by me is genuine to my best knowledge.
+</textarea>
+<input type="submit" name="send info" value="Submit" onclick="validate();" style="margin-top:50px;">
+</form>
+</body>
+</html>

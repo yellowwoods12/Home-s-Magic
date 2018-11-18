@@ -1,0 +1,41 @@
+body{
+	background-color: #E0E0E0;
+}
+fieldset#A{
+	width: 50%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 20px;
+}
+fieldset#B{
+	width: 50%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 20px;
+}
+fieldset#C{
+	width: 50%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 20px;
+}
+input#D{
+	width: 300px;
+	height: 50px;
+	background-color: #ff8000;
+	color: white;
+	margin: 10px 300px 0px 530px;
+	font-size: 24px;
+	border-radius: 20px;
+	border-style: groove;
+	border-color: white;
+}
+input#D:hover{
+	background-color: white;
+	color: #ff8000;
+	border-color: #ff8000;
+	box-shadow: 15px 15px 15px #606060;
+}
+input{
+	margin: 5px;
+}

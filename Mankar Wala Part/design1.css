@@ -1,0 +1,28 @@
+button{
+	width: 300px;
+	height: 50px;
+	background-color: #ff8000;
+	color: white;
+	margin: 0px 300px 0px 530px;
+	font-size: 24px;
+	border-radius: 20px;
+	border-style: groove;
+	border-color: white;
+}
+button:hover{
+	background-color: white;
+	color: #ff8000;
+	border-color: #ff8000;
+	box-shadow: 15px 15px 15px #606060;
+}
+select{
+	width: 500px;
+	height: 50px;
+	margin: 250px 300px 20px 420px;
+}
+select:hover{
+	border-color: #0066CC;
+}
+body{
+	background-color: #E0E0E0;
+}

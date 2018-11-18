@@ -1,0 +1,33 @@
+p{
+	width: 800px;
+	height: 200px;
+	margin: 10px auto;
+	line-height: 2em;
+	word-spacing: 5px;
+	font-size: 20px;
+	font-family: Nobile;
+}
+@font-face{
+	font-family: Nobile;
+	src: url("Nobile/Nobile-Bold");
+}
+button{
+	width: 300px;
+	height: 50px;
+	background-color: #ff8000;
+	color: white;
+	margin: 20px 300px 0px 530px;
+	font-size: 24px;
+	border-radius: 20px;
+	border-style: groove;
+	border-color: white;
+}
+button:hover{
+	background-color: white;
+	color: #ff8000;
+	border-color: #ff8000;
+	box-shadow: 15px 15px 15px #606060;
+}
+body{
+	background-color: #E0E0E0;
+}
