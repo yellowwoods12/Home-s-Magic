@@ -1,4 +1,4 @@
-#Food_Application
+#Food Application
 
 This is a project about a food application that demonstrates the idea of selling home-made food in metropolitans. The whole idea was to built a complete independent application wherein both sellers and buyers can create profiles on this app and can add food products that they want to sell with a self-defined pricelist and can add the items in the cart and order them using cash on delivery or through an online payment service.
 
