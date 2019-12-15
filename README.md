@@ -12,7 +12,10 @@ This application is built on PHP, MYSQL, HTML, CSS, Javascript and Jquery.
 Inorder to setup this project, follow the given instructions:
 
 <ol>
-  <li> Install XAMPP on local machine. Refer this link to download the XAMPP Server : https://www.apachefriends.org/index.html . Download the XAMPP Server according to your local system.
+
+  <li> Install XAMPP on ubuntu using this link :https://vitux.com/how-to-install-xampp-on-your-ubuntu-18-04-lts-system/
+
+  <li> Install XAMPP on windows local machine. Refer this link to download the XAMPP Server : https://www.apachefriends.org/index.html . Download the XAMPP Server according to your local system.
   <p align = "center">
     <img src = "/Installation/inst1.png" height = "300px">
   </p>
@@ -48,6 +51,9 @@ Inorder to setup this project, follow the given instructions:
     <p align = "center">
       <img src = "/Installation/inst13.png" height = "300px">
     </p>
+    
+   <li> Run all the MYSQL queries through your phpmyadmin using this link: https://my.bluehost.com/hosting/help/how-to-copy-a-database-using-phpmyadmin
+
   <li> Now in the browser type <b>localhost</b>. And here we have completed with this.
     <p align = "center">
       <img src = "/Installation/inst14.png" height = "200px">
