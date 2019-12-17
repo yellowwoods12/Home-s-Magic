@@ -1,7 +1,16 @@
-# Food Application
+<h1 align="center">Food Application</h1>
+<hr>
+<br>
+
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
+
+## Demo
 <p align="center">
   <img src="y.png" height="300px">
  </p>
+
 This is a project about a food application that demonstrates the idea of selling home-made food in metropolitans. The whole idea was to built a complete independent application wherein both sellers and buyers can create profiles on this app and can add food products that they want to sell with a self-defined pricelist and can add the items in the cart and order them using cash on delivery or through an online payment service.
 
 Currently it only provides the option of cash on delivery but would like to have a 3rd party gateway integrated to the application.
@@ -59,6 +68,14 @@ Inorder to setup this project, follow the given instructions:
       <img src = "/Installation/inst14.png" height = "200px">
     </p>
   
-  
+## Contributions 
+
+* All contributions are welcome.
+* Create pull requests, submit bugs, suggest new features.
+* Join the Slack Channel for queries and other related stuff.
+
+#### Slack Channel 
+
+https://join.slack.com/t/mentorship-d7p1572/shared_invite/enQtODQ2NjQzNTU1ODYwLTJlMWNiNGNlZjhiZTNkMjc3YmI2MGZjZmM2NjRlNDk1YzI1MTI2ODc0ODgzODdiMjBkZmJjMmM3YjM3OTA5MmE
 
 
