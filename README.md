@@ -68,6 +68,21 @@ Inorder to setup this project, follow the given instructions:
       <img src = "/Installation/inst14.png" height = "200px">
     </p>
   
+
+     </ol>
+  
+ ## How to update your local master branch
+ * First of all switch to master branch<br>
+ `  git checkout master`
+ <br><br>
+ * Now pull the updated master branch<br>
+ `  git pull https://github.com/yellowwoods12/Home-s-Magic.git`
+ <br><br>
+ * Now merge the updated code to your local branch master<br>
+ `  git push`
+ <br><br>
+
+ 
 ## Contributions 
 
 * All contributions are welcome.
