@@ -69,7 +69,7 @@ Inorder to setup this project, follow the given instructions:
     </p>
   
 
-     </ol>
+  </ol>
   
  ## How to update your local master branch
  * First of all switch to master branch<br>
@@ -82,7 +82,7 @@ Inorder to setup this project, follow the given instructions:
  `  git push`
  <br><br>
 
- 
+
 ## Contributions 
 
 * All contributions are welcome.
