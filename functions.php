@@ -32,7 +32,7 @@ function getCuisine()
 		$cuisine_img = $row['cuisine_image'];
 
 		echo "<div class='col-lg-3 col-lg-offset-1 col-md-4 col-md-2-offset cuisine-box'>";
-        echo "<a href='result2.php?cuisine_url=$cuisine_id'><img src='css/".$cuisine_img."'".' class="img-cuisine img-thumbnail"></a>';
+        echo "<a href='result2.php?cuisine_url=$cuisine_id'><img src='css/".$cuisine_img."'".' class="img-cuisine img-thumbnail animated tada"></a>';
         echo "<h4 class='text-center desc-cuisine'>$cuisine_name</h4>";
    		echo "</div>";
 		$count++;

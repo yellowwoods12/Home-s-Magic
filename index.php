@@ -13,6 +13,7 @@ include('connection.php');
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" href="FA/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -36,7 +37,7 @@ include('connection.php');
   <body>
     <div class="container-fluid jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
         <a href='index.php' ><h1 id="head-text">Home Magic</h1></a>
-        <h2 style="font-family: 'Charmonman', cursive;">"GHAR JAISA KHAANA" Now At Your Click</h2>
+        <h2 style="font-family: 'Charmonman', cursive;" class = "animated infinite bounce">"GHAR JAISA KHAANA" Now At Your Click</h2>
         <div class="buttons">
           <?php
           if(!isset($_SESSION['cust_log_id']))
