@@ -21,6 +21,7 @@ include('connection.php');
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/save_details.js"></script>
@@ -43,7 +44,7 @@ include('connection.php');
           if(!isset($_SESSION['cust_log_id']))
           {
           echo"<button class='btn btn-primary' data-toggle='modal' data-target='#signupModal'>Register</button>
-          <button class='btn btn-success' data-toggle='modal' data-target='#loginModal'>Sign In</button>";
+          <button class='btn btn-success' data-toggle='modal' data-target='#loginModal'><i class='fa fa-user-plus' aria-hidden='true'></i>Sign In</button>";
           }
           else
           {
@@ -82,6 +83,7 @@ include('connection.php');
       </div>
     </div>
 
+  <!-- footer starts here -->
     <div class="nav navbar-inverse foot">
       <div class="container-fluid text-center">
         <div class="row">
@@ -114,10 +116,12 @@ include('connection.php');
           </div>
         </div>
         <div class="row" style="margin-top:20px;">
-          <div class="col-lg-12"><p style="color:#b3b3b3;">&copy;2018 CREATED BY TRIPTI SHUKLA</p></div>
+          <div class="col-lg-12"><p style="color:#ffffff;">&copy;2018 CREATED BY TRIPTI SHUKLA</p></div>
         </div>
       </div>
-    </div>
+      </div>
+
+  <!-- footer ends here -->
 
     <!--modal for Sign Up-->
 <div id="signupModal" class="modal fade" role="dialog">

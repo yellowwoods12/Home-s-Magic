@@ -43,18 +43,22 @@ html,body{
 	font-size: 25px;
 	margin-top: 20px;
 	margin-right: 20px;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 .headings{
 	margin-bottom: 50px;
-	background-color: rgb(204, 204, 204);
+	background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding: 20px;
+	color:white;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 
 
 .city{
-	background-color: red;
+	background-color: #003269;
 	color:white;
 	text-align: center;
 	padding:20px;
@@ -64,16 +68,17 @@ html,body{
 	-webkit-transition-duration: 0.2s; 
     transition-duration: 0.2s;
     cursor: pointer;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 .city:hover{
 	background-color: white;
-	color:red;
+	color:#003269;
 	text-align: center;
 	padding:20px;
 	font-size: 20px;
-	border:solid 1px red;
+	border:solid 1px #003269;
 	border-radius: 5px;
 	margin-bottom: 10px;
 	font-weight:bold;
@@ -90,13 +95,13 @@ html,body{
 .img-cuisine{
 	height:250px;
 	width: 100%;
-	border-color: black;
+	border-color: #0083B0;
 	-webkit-transition-duration: 0.2s;
 }
 
 .img-cuisine:hover{
-	-webkit-box-shadow:0px 0px 30px 0px rgba(232, 0, 0, 0.67);
-	border-color:rgba(232, 0, 0, 0.67);
+	-webkit-box-shadow:0px 0px 30px 0px #0083B0;
+	border-color:#0083B0;
 	-webkit-transform:scale(1.1) !important;
 	-moz-transform:scale(1.1) !important;
 	-o-transform:scale(1.1) !important;
@@ -105,11 +110,14 @@ html,body{
 
 .desc-cuisine{
 	margin-top:20px;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 .foot{
 	color:white;
-	background-color: #34495e;
+	background: #00B4DB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding-bottom: 20px;
 }
 
