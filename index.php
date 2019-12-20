@@ -19,8 +19,8 @@
   <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- FontAwesome 5 CDN -->
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <!-- FontAwesome 5.12 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
   <!--<link rel="stylesheet" href="FA/css/font-awesome.min.css">-->
 
   <!-- Google Fonts -->
@@ -28,7 +28,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&display=swap">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Girassol&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
@@ -92,15 +93,9 @@
 
 
 <!-- Locality -->
-<div class="row">
-  <div class="container-fluid">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center headings" style="margin-top: -10px;">
-      <h1 id="set">
-        <i class="fa fa-building" aria-hidden="true"></i>
-        <span>SEARCH BY LOCALITY</span>
-      </h1>
-    </div>
-  </div>
+<div class="container-fluid headings text-center">
+  <i class="fas fa-store"></i>
+  <span>SEARCH BY LOCALITY</span>
 </div>
 
 <div class="row">
@@ -112,15 +107,9 @@
 
 
 <!-- Cuisine -->
-<div class="row" style="margin-top:30px;">
-  <div class="container-fluid">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center headings">
-      <h1>
-        <i class="fa fa-cutlery" aria-hidden="true"></i>
-        <span>SEARCH BY CUISINE</span>
-      </h1>
-    </div>
-  </div>
+<div class="container-fluid headings text-center">
+  <i class="fas fa-utensils"></i>
+  <span>SEARCH BY LOCALITY</span>
 </div>
 
 <div class="row cuisine-list">
