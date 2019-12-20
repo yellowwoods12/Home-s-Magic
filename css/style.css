@@ -10,6 +10,9 @@ html, body {
 	 ---------------- */
 .jumbotron {
 	height: 100vh;
+	display: grid;
+	align-items: center;
+	justify-content: center;
 	background: linear-gradient(
 		to bottom,
 		rgba(0,0,0,0.7) 0%,
@@ -21,27 +24,26 @@ html, body {
 	color:white;
 }
 
-.jumbotron h1 {
-	margin: 12.5rem 0 2.5rem 0;
+.banner-content h1 {
+	margin: 0 0 2.5rem 0;
 	font-family: "Amatic SC", cursive !important;
 	font-size: 9rem;
 	color: white;
 }
 
-.jumbotron h2 {
+.banner-content h2 {
 	margin: 2.5rem 0 5rem 0;
 	font-size: 2.5rem;
 	line-height: 5rem;
 }
 
-.jumbotron h3 {
+.banner-content h3 {
 	margin-bottom: 2rem;
 	font-family: 'Comfortaa', cursive;
 	font-size: 1.5rem;
 }
 
-
-.buttons .btn {
+.banner-content button {
 	margin: 0 1.25rem;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 25px;
