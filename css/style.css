@@ -1,49 +1,58 @@
-html,body{
-	overflow-x:hidden;
-	background: url(bg1.png);
+html, body {
+	font-size: 1rem;
+	background: url("../Images/bg-white-tex.jpg");
+	overflow-x: hidden;
 }
 
-@font-face{
-	font-family: 'Amatic SC', cursive;
-}
 
-.jumbotron{
-	background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(thali.jpg);
-	color:white;
+/* ----------------
+	 Main Banner
+	 ---------------- */
+.jumbotron {
+	height: 100vh;
+	background: linear-gradient(
+		to bottom,
+		rgba(0,0,0,0.7) 0%,
+		rgba(0,0,0,0.7) 100%),
+		url("thali.jpg");
 	background-repeat:no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100vh; 	
+	color:white;
 }
 
-.jumbotron > a > h1,.jumbotron > a > h1:hover,#rest-logo{
+.jumbotron h1 {
+	margin: 12.5rem 0 2.5rem 0;
+	font-family: "Amatic SC", cursive !important;
+	font-size: 9rem;
 	color: white;
-	font-family: "Amatic SC" !important;
-
-
 }
 
-.jumbotron > a{
-	text-decoration: none;
-	
+.jumbotron h2 {
+	margin: 2.5rem 0 5rem 0;
+	font-size: 2.5rem;
+	line-height: 5rem;
 }
 
-.jumbotron h1{
-	font-size: 150px;
-	padding-top: 200px;
+.jumbotron h3 {
+	margin-bottom: 2rem;
+	font-family: 'Comfortaa', cursive;
+	font-size: 1.5rem;
 }
 
 
-.jumbotron h2{
-	font-size: 40px;
-	padding-top: 50px;
-}
-
-.buttons > .btn{
+.buttons .btn {
+	margin: 0 1.25rem;
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 25px;
-	margin-top: 20px;
-	margin-right: 20px;
 }
+
+
+
+
+
+
+
 
 .headings{
 	margin-bottom: 50px;

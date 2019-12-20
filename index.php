@@ -23,12 +23,15 @@
   <!--<link rel="stylesheet" href="FA/css/font-awesome.min.css">-->
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Girassol&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script type="text/javascript" src="js/jquery.js"></script>
@@ -48,7 +51,8 @@
 
 <!-- Main Banner -->
 <div class="container-fluid jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-  <a href='index.php'><h1 id="head-text">Home Magic</h1></a>
+  <h1 id="head-text">Home Magic</h1>
+  
   <h2 style="font-family: 'Charmonman', cursive;">
     "ghar&nbsp;&nbsp;jaisa&nbsp;&nbsp;khaana"&nbsp;
     now&nbsp;&nbsp;at&nbsp;&nbsp;your&nbsp;&nbsp;click
@@ -56,22 +60,24 @@
 
   <div class="buttons">
     <?php
-      if(!isset($_SESSION['cust_log_id'])) {
+      if (!isset($_SESSION['cust_log_id'])) {
         echo "
         <button class='btn btn-primary' data-toggle='modal' data-target='#signupModal'>
-          Register
+          REGISTER
         </button>
 
         <button class='btn btn-success' data-toggle='modal' data-target='#loginModal'>
-          Sign In
+          SIGN IN
         </button>";
       }
 
       else {
         echo "
-        <h3>Hello ".$_SESSION['cust_log_fname']." ".$_SESSION['cust_log_lname']."</h3>
-        <br/>
-        <button class='btn btn-danger' onclick='logout()'>LOGOUT</button>";
+        <h3>Hello, ".$_SESSION['cust_log_fname']." ".$_SESSION['cust_log_lname']."</h3>
+
+        <button class='btn btn-danger' onclick='logout()'>
+          LOGOUT
+        </button>";
       }
     ?>
   </div>
