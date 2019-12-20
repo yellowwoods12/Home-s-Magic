@@ -57,7 +57,7 @@ html, body {
 .banner-content button {
 	margin: 0 1.25rem;
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 25px;
+	font-size: 1.5rem;
 }
 
 #scroll-down {
@@ -73,16 +73,18 @@ html, body {
 }
 
 
+/* ----------------
+	 Locality
+   ---------------- */
+.headings {
+	padding: 1.25rem;
+	font-family: 'Acme', sans-serif;
+	font-size: 2rem;
+	background-color: darkgray;
+}
 
-
-
-
-
-
-.headings{
-	margin-bottom: 50px;
-	background-color: rgb(204, 204, 204);
-	padding: 20px;
+.headings i {
+	margin-right: 1rem;
 }
 
 
