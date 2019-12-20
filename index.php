@@ -51,7 +51,7 @@
 <body>
 
 <!-- Main Banner -->
-<div class="container-fluid jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+<div class="banner text-center">
   <div class="banner-content">
     <h1 id="head-text">Home Magic</h1>
     
