@@ -83,6 +83,9 @@
       ?>
     </div>
   </div>
+
+  <!-- Scroll down animation arrow -->
+  <a href="" id="scroll-down"></a>
 </div>
 <!-- Main Banner ends -->
 
