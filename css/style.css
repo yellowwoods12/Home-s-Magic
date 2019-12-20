@@ -1,4 +1,8 @@
 html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	font-size: 1rem;
 	background: url("../Images/bg-white-tex.jpg");
 	overflow-x: hidden;
@@ -10,9 +14,7 @@ html, body {
 	 ---------------- */
 .jumbotron {
 	height: 100vh;
-	display: grid;
-	align-items: center;
-	justify-content: center;
+	position: relative;
 	background: linear-gradient(
 		to bottom,
 		rgba(0,0,0,0.7) 0%,
@@ -22,6 +24,14 @@ html, body {
 	background-position: center;
 	background-size: cover;
 	color:white;
+}
+
+.banner-content {
+	width: inherit;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .banner-content h1 {
@@ -47,6 +57,18 @@ html, body {
 	margin: 0 1.25rem;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 25px;
+}
+
+#scroll-down {
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	bottom: 2.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url("../Images/scroll-arrow.gif");
+	background-size: cover;
+	cursor: pointer;
 }
 
 
