@@ -51,35 +51,37 @@
 
 <!-- Main Banner -->
 <div class="container-fluid jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-  <h1 id="head-text">Home Magic</h1>
-  
-  <h2 style="font-family: 'Charmonman', cursive;">
-    "ghar&nbsp;&nbsp;jaisa&nbsp;&nbsp;khaana"&nbsp;
-    now&nbsp;&nbsp;at&nbsp;&nbsp;your&nbsp;&nbsp;click
-  </h2>
+  <div class="banner-content">
+    <h1 id="head-text">Home Magic</h1>
+    
+    <h2 style="font-family: 'Charmonman', cursive;">
+      "ghar&nbsp;&nbsp;jaisa&nbsp;&nbsp;khaana"&nbsp;
+      now&nbsp;&nbsp;at&nbsp;&nbsp;your&nbsp;&nbsp;click
+    </h2>
 
-  <div class="buttons">
-    <?php
-      if (!isset($_SESSION['cust_log_id'])) {
-        echo "
-        <button class='btn btn-primary' data-toggle='modal' data-target='#signupModal'>
-          REGISTER
-        </button>
+    <div class="buttons">
+      <?php
+        if (!isset($_SESSION['cust_log_id'])) {
+          echo "
+          <button class='btn btn-primary' data-toggle='modal' data-target='#signupModal'>
+            REGISTER
+          </button>
 
-        <button class='btn btn-success' data-toggle='modal' data-target='#loginModal'>
-          SIGN IN
-        </button>";
-      }
+          <button class='btn btn-success' data-toggle='modal' data-target='#loginModal'>
+            SIGN IN
+          </button>";
+        }
 
-      else {
-        echo "
-        <h3>Hello, ".$_SESSION['cust_log_fname']." ".$_SESSION['cust_log_lname']."</h3>
+        else {
+          echo "
+          <h3>Hello, ".$_SESSION['cust_log_fname']." ".$_SESSION['cust_log_lname']."</h3>
 
-        <button class='btn btn-danger' onclick='logout()'>
-          LOGOUT
-        </button>";
-      }
-    ?>
+          <button class='btn btn-danger' onclick='logout()'>
+            LOGOUT
+          </button>";
+        }
+      ?>
+    </div>
   </div>
 </div>
 <!-- Main Banner ends -->
