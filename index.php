@@ -18,8 +18,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="FA/css/font-awesome.min.css">
+  <!-- FontAwesome 5 CDN -->
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <!--<link rel="stylesheet" href="FA/css/font-awesome.min.css">-->
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
@@ -142,13 +143,13 @@
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot-content">
         <h4>Follow Us:</h4>
         <a href="#" class="sm_button" id="fb_button">
-          <i class="fa fa-facebook-square fa-2x"></i></a>
+          <i class="fab fa-facebook-square fa-2x"></i></a>
         <a href="#" class="sm_button" id="twitter_button">
-          <i class="fa fa-twitter-square fa-2x"></i></a>
+          <i class="fab fa-twitter-square fa-2x"></i></a>
         <a href="#" class="sm_button" id="youtube_button">
-          <i class="fa fa-youtube-play fa-2x"></i></a>
+          <i class="fab fa-youtube fa-2x"></i></a>
         <a href="#" class="sm_button" id="instagram_button">
-          <i class="fa fa-instagram fa-2x"></i></a>
+          <i class="fab fa-instagram fa-2x"></i></a>
       </div>
     </div>
 
