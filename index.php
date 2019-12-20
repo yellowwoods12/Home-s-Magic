@@ -36,6 +36,7 @@ include('connection.php');
     <![endif]-->
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up"style="font-size:42px;" aria-hidden="true"></i></button>
     <div class="container-fluid jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
         <a href='index.php' ><h1 id="head-text">Home Magic</h1></a>
         <h2 style="font-family: 'Charmonman', cursive;" class = "animated infinite bounce">"GHAR JAISA KHAANA" Now At Your Click</h2>
@@ -224,5 +225,6 @@ include('connection.php');
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
     <script type="text/javascript" src=js/custom.js></script>
+    <script type="text/javascript" src=js/custom1.js></script>
   </body>
 </html>
