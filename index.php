@@ -35,6 +35,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 
+  <!-- CDN for animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script type="text/javascript" src="js/jquery.js"></script>
   
@@ -51,12 +54,14 @@
 
 <body>
 
+<button onclick="topFunction()" id="scrollToTop" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size:30px;"></i></button>
+
 <!-- Main Banner -->
 <div class="banner text-center">
   <div class="banner-content">
     <h1 id="head-text">Home Magic</h1>
     
-    <h2 style="font-family: 'Charmonman', cursive;">
+    <h2 style="font-family: 'Charmonman', cursive;" class="animated zoomIn">
       "ghar&nbsp;&nbsp;jaisa&nbsp;&nbsp;khaana"&nbsp;
       now&nbsp;&nbsp;at&nbsp;&nbsp;your&nbsp;&nbsp;click
     </h2>
@@ -266,6 +271,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
 <script type="text/javascript" src=js/custom.js></script>
+<script type="text/javascript" src=js/custom1.js></script>
 
 </body>
 

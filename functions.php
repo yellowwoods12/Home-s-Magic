@@ -57,8 +57,8 @@ function getCuisine()
 
 		echo "
 		<a href='result2.php?cuisine_url=$cuisine_id' class='col-md-4'>
-			<div class='card'>
-				<div class='card-image-top' style='background: url(".'"css/'.$cuisine_img.'"'.") no-repeat center; background-size: cover'></div>
+			<div class='card img-cuisine'>
+				<div class='card-image-top animated bounceIn' style='background: url(".'"css/'.$cuisine_img.'"'.") no-repeat center; background-size: cover';></div>
 				<div class='card-body text-center'>
 					<h5 class='card-title'>$cuisine_name</h5>
 				</div>

@@ -5,7 +5,7 @@ h1.addEventListener("input", function () {
 });
 
 // When the user scrolls down 20px from the top of the document, show the move to top button
-var mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("scrollToTop");
 
 window.onscroll = function () { scrollFunction() };
 
