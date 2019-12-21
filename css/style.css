@@ -133,9 +133,13 @@ html, body {
 	margin: 3rem auto;
 }
 
+.cuisines > div {
+	padding: 15px;
+}
+
 .cuisines a {
-	margin-bottom: 1rem;
-	padding: 1rem;
+	margin: 0;
+	padding: 0;
 	text-decoration: none;
 	font-family: 'Comfortaa', cursive;
 	color: darkslategrey;
@@ -144,7 +148,7 @@ html, body {
 
 .cuisines a:hover,
 .cuisines a:active {
-	padding: 0.75rem;
+	transform: scale(1.025);
 }
 
 .cuisines .card {
@@ -245,8 +249,7 @@ footer .row:last-of-type span {
 
 
 
-
-.icon-bar{
+/*.icon-bar{
 	color:;
 }
 .cuisine-box{
@@ -276,7 +279,7 @@ footer .row:last-of-type span {
 	color:white;
 	background-color: #34495e;
 	padding-bottom: 20px;
-}
+}*/
 
 .search-area{
 	border-radius:200px;
