@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Girassol&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
@@ -112,13 +112,6 @@
   <span>Search by CUISINE</span>
 </div>
 
-<!--<div class="row cuisine-list">
-  <div class="container-fluid">
-      <div class="container">
-          <?php //getCuisine(); ?>
-      </div>
-  </div>
-</div>-->
 <div class="container">
   <div class="row cuisines">
     <?php getCuisine(); ?>
@@ -128,25 +121,25 @@
 
 
 <!-- Footer -->
-<div class="nav navbar-inverse foot">
-  <div class="container-fluid text-center">
+<footer>
+  <div class="container text-center">
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot-content">
+      <div class="col-md-4 foot-content">
         <h4>Contact Us:</h4>
         <p>
           <i class="fa fa-envelope" aria-hidden="true"></i>
           &nbsp;&nbsp;help.service@homesmagic.com</p>
         <p>
           <i class="fa fa-phone" aria-hidden="true"></i>
-          &nbsp;&nbsp;1800-194-234(toll-free)</p>
+          &nbsp;&nbsp;1800-194-234 (toll-free)</p>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot-content">
-        <h4>Headquarters Address:</h4>
+      <div class="col-md-4 foot-content">
+        <h4>Address:</h4>
         <p>Block no. 304, Flexon Apartments, Noida</p>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foot-content">
+      <div class="col-md-4 foot-content">
         <h4>Follow Us:</h4>
         <a href="#" class="sm_button" id="fb_button">
           <i class="fab fa-facebook-square fa-2x"></i></a>
@@ -159,22 +152,20 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Career</a></li>
-        </ol>
-      </div>
+    <div class="row links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Career</a></li>
+      </ul>
     </div>
 
-    <div class="row" style="margin-top:20px;">
-      <div class="col-lg-12"><p style="color:#b3b3b3;">&copy;2018 CREATED BY TRIPTI SHUKLA</p></div>
+    <div class="row">
+      <span>&copy;2018 CREATED BY TRIPTI SHUKLA</span>
     </div>
   </div>
-</div>
+</footer>
 <!-- Footer ends -->
 
 

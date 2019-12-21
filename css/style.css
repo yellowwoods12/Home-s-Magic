@@ -95,7 +95,7 @@ html, body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 2rem auto;
+	margin: 3rem auto;
 }
 
 .city {
@@ -116,10 +116,9 @@ html, body {
 
 .city:hover,
 .city:active {
-	border: 1px solid maroon;
+	border: 1px solid darkslategray;
 	text-decoration: none;
-	background-color: lemonchiffon;
-	color: maroon;
+	color: darkslategray;
 }
 
 .city span {
@@ -132,7 +131,7 @@ html, body {
 	 Cuisine
 	 ---------------- */
 .cuisines {
-	margin: 2rem auto;
+	margin: 3rem auto;
 }
 
 .cuisines a {
@@ -162,6 +161,87 @@ html, body {
 .cuisines h5 {
 	margin: 0;
 	font-weight: 700;
+}
+
+
+
+/* ----------------
+	 Footer
+	 ---------------- */
+footer {
+	padding: 4rem 1rem;
+	font-family: 'Lato', sans-serif;
+	background: #34495e;
+	color: white;
+}
+
+.foot-content {
+	margin-bottom: 2.5rem;
+}
+
+.foot-content h4 {
+	margin-bottom: 1.5rem;
+}
+
+.foot-content p {
+	margin-bottom: 0.75rem;
+}
+
+.foot-content a {
+	transition: all 0.5s ease;
+}
+
+
+#fb_button:hover {
+	color: #0084ff;
+}
+
+#twitter_button:hover {
+	color: #55acee;
+}
+
+#youtube_button:hover {
+	color: #cd201f;
+}
+
+#instagram_button:hover {
+	color: #e4405f;
+}
+
+
+.links ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.links ul li {
+	margin: 1rem;
+}
+
+.links ul li a {
+	text-decoration: none;
+	color: darkgray;
+	transition: all 0.5s ease;
+}
+
+.links ul li a:hover,
+.links ul li a:active {
+	color: white;
+}
+
+
+footer .row:last-of-type {
+	margin-top: 1.5rem;
+	color: gray;
+}
+
+footer .row:last-of-type span {
+	margin: auto;
 }
 
 
@@ -299,8 +379,8 @@ html, body {
 }
 
 .foot-content{
-	margin-top: 10px;
-	margin-bottom:20px;
+	/*margin-top: 10px;
+	margin-bottom:20px;*/
 }
 
 .search-btn{
@@ -312,40 +392,6 @@ html, body {
 .search-btn:hover{
 	background-color: #ff7000;
 	border-color:#ff7000; 
-}
-
-#fb_button:hover{
-	color:#3B5998;
-}
-
-#twitter_button:hover{
-	color:#80d4ff;
-}
-
-#youtube_button:hover{
-	margin-left:0px;
-}
-
-#youtube_button:hover{
-	color:rgb(255, 0, 0);
-}
-
-#instagram_button>a:hover{
-	color:rgb(198, 26, 255);
-}
-
-.breadcrumb{
-	background-color: inherit;
-}
-
-.breadcrumb > li > a{
-	color: white;
-	text-decoration: none;
-}
-
-.breadcrumb > li > a:hover{
-	color: white;
-	text-decoration: underline;
 }
 
 .result-list{
