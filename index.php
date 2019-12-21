@@ -95,7 +95,7 @@
 <!-- Locality -->
 <div class="container-fluid headings text-center">
   <i class="fas fa-store"></i>
-  <span>SEARCH BY LOCALITY</span>
+  <span>Search by LOCALITY</span>
 </div>
 
 <div class="row">
@@ -109,14 +109,19 @@
 <!-- Cuisine -->
 <div class="container-fluid headings text-center">
   <i class="fas fa-utensils"></i>
-  <span>SEARCH BY LOCALITY</span>
+  <span>Search by CUISINE</span>
 </div>
 
-<div class="row cuisine-list">
+<!--<div class="row cuisine-list">
   <div class="container-fluid">
       <div class="container">
-          <?php getCuisine(); ?>
+          <?php //getCuisine(); ?>
       </div>
+  </div>
+</div>-->
+<div class="container">
+  <div class="row cuisines">
+    <?php getCuisine(); ?>
   </div>
 </div>
 <!-- Cuisine ends -->

@@ -7,9 +7,9 @@ function getCity()
 {
 	global $con;
 	
-	$count = 1;
+	//$count = 1;
 	$city_query = "SELECT * FROM city";
-	$exec_city_query = mysqli_query($con,$city_query);
+	$exec_city_query = mysqli_query($con, $city_query);
 	
 	while ($row = mysqli_fetch_array($exec_city_query))
 	{
@@ -36,30 +36,45 @@ function getCity()
 				</div>
 			</a>";*/
 		
-		$count++;
+		//$count++;
 	}
 }
 
+// fetches list of cuisines available and creates cards
 function getCuisine()
 {
 	global $con;
-	$count = 1;
+	
+	//$count = 1;
 	$cuisine_query = "SELECT * FROM cuisine";
-	$exec_cuisine_query = mysqli_query($con,$cuisine_query);
-	while($row = mysqli_fetch_array($exec_cuisine_query))
+	$exec_cuisine_query = mysqli_query($con, $cuisine_query);
+	
+	while ($row = mysqli_fetch_array($exec_cuisine_query))
 	{
 		$cuisine_id = $row['cuisine_id'];
 		$cuisine_name = $row['cuisine_name'];
 		$cuisine_img = $row['cuisine_image'];
 
+		echo "
+		<a href='result2.php?cuisine_url=$cuisine_id' class='col-md-4'>
+			<div class='card'>
+				<div class='card-image-top' style='background: url(".'"css/'.$cuisine_img.'"'.") no-repeat center; background-size: cover'></div>
+				<div class='card-body text-center'>
+					<h5 class='card-title'>$cuisine_name</h5>
+				</div>
+			</div>
+		</a>";
+		/*<img src='css/$cuisine_img' alt='$cuisine_name' class='card-image-top' width='100%'>
 		echo "<div class='col-lg-3 col-lg-offset-1 col-md-4 col-md-2-offset cuisine-box'>";
         echo "<a href='result2.php?cuisine_url=$cuisine_id'><img src='css/".$cuisine_img."'".' class="img-cuisine img-thumbnail"></a>';
         echo "<h4 class='text-center desc-cuisine'>$cuisine_name</h4>";
-   		echo "</div>";
-		$count++;
-
+   		echo "</div>";*/
+		//$count++;
 	}
 }
+
+
+
 
 function get_locality_dropdown()
 {
