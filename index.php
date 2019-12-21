@@ -98,8 +98,8 @@
   <span>Search by LOCALITY</span>
 </div>
 
-<div class="row">
-  <div class="container cities">
+<div class="container">
+  <div class="row cities">
     <?php getCity(); ?>
   </div>
 </div>
