@@ -61,7 +61,8 @@ Inorder to setup this project, follow the given instructions:
       <img src = "/Installation/inst13.png" height = "300px">
     </p>
     
-   <li> Run all the MYSQL queries through your phpmyadmin using this link: https://my.bluehost.com/hosting/help/how-to-copy-a-database-using-phpmyadmin
+
+   <li> Run all the MYSQL queries through your phpMyAdmin using this link: https://my.bluehost.com/hosting/help/how-to-copy-a-database-using-phpmyadmin
 
   <li> Now in the browser type <b>localhost</b>. And here we have completed with this.
     <p align = "center">
