@@ -65,11 +65,11 @@
       <?php
         if (!isset($_SESSION['cust_log_id'])) {
           echo "
-          <button class='btn btn-primary' data-toggle='modal' data-target='#signupModal'>
+          <button class='btn btn-outline-primary' data-toggle='modal' data-target='#signupModal'>
             REGISTER
           </button>
 
-          <button class='btn btn-success' data-toggle='modal' data-target='#loginModal'>
+          <button class='btn btn-outline-success' data-toggle='modal' data-target='#loginModal'>
             SIGN IN
           </button>";
         }
@@ -78,7 +78,7 @@
           echo "
           <h3>Hello, ".$_SESSION['cust_log_fname']." ".$_SESSION['cust_log_lname']."</h3>
 
-          <button class='btn btn-danger' onclick='logout()'>
+          <button class='btn btn-outline-danger' onclick='logout()'>
             LOGOUT
           </button>";
         }
@@ -99,7 +99,7 @@
 </div>
 
 <div class="row">
-  <div class="container">
+  <div class="container cities">
     <?php getCity(); ?>
   </div>
 </div>

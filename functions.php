@@ -1,21 +1,42 @@
 <?php
+
 include('connection.php');
+
+// fetches list of cities available and creates buttons
 function getCity()
 {
 	global $con;
+	
 	$count = 1;
 	$city_query = "SELECT * FROM city";
 	$exec_city_query = mysqli_query($con,$city_query);
-	while($row = mysqli_fetch_array($exec_city_query))
+	
+	while ($row = mysqli_fetch_array($exec_city_query))
 	{
 		$city_id = $row['city_id'];
 		$city_name = $row['city_name'];
-		if($count%3 == 1)
-			echo "<a href='result2.php?city_id_url=$city_id'><div class='col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 city'>$city_name</div></a>";
+		
+		echo "
+		<a href='result2.php?city_id_url=$city_id' class='city'>
+			<span>$city_name</span>
+		</a>";
+		/*if ($count % 3 == 1)
+			echo "
+			<a href='result2.php?city_id_url=$city_id'>
+				<div class='col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 city'>
+					$city_name
+				</div>
+			</a>";
+		
 		else
-			echo "<a href='result2.php?city_id_url=$city_id'><div class='col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2 city'>$city_name</div></a>";
+			echo "
+			<a href='result2.php?city_id_url=$city_id'>
+				<div class='col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-2 city'>
+					$city_name
+				</div>
+			</a>";*/
+		
 		$count++;
-
 	}
 }
 
@@ -541,5 +562,3 @@ function showReview()
 }
 
 ?>
-
-

@@ -73,9 +73,7 @@ html, body {
 }
 
 
-/* ----------------
-	 Locality
-   ---------------- */
+
 .headings {
 	padding: 1.25rem;
 	font-family: 'Acme', sans-serif;
@@ -89,30 +87,43 @@ html, body {
 
 
 
-.city{
-	background-color: red;
-	color:white;
-	text-align: center;
-	padding:20px;
-	font-size: 20px;
-	border:solid 1px white;
-	border-radius: 5px;
-	-webkit-transition-duration: 0.2s; 
-    transition-duration: 0.2s;
-    cursor: pointer;
-    margin-bottom: 10px;
+/* ----------------
+	 Locality
+	 ---------------- */
+.cities {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2rem auto;
 }
 
-.city:hover{
-	background-color: white;
-	color:red;
-	text-align: center;
-	padding:20px;
-	font-size: 20px;
-	border:solid 1px red;
-	border-radius: 5px;
-	margin-bottom: 10px;
-	font-weight:bold;
+.city {
+	height: 3rem;
+	margin: 0.25rem;
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	border: 1px solid coral;
+	border-radius: 2rem;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.125rem;
+	font-weight: 700;
+	background-color: ivory;
+	color: coral;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+.city:hover,
+.city:active {
+	border: 1px solid maroon;
+	text-decoration: none;
+	background-color: lemonchiffon;
+	color: maroon;
+}
+
+.city span {
+	line-height: normal;
 }
 
 .icon-bar{
