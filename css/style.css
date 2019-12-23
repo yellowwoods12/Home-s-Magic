@@ -1,3 +1,7 @@
+/* ====================================
+	 Common
+	 ==================================== */
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -17,12 +21,106 @@ html, body {
 	width: inherit;
 }
 
+
+
+/* ----------------
+	 Footer
+	 ---------------- */
 footer {
 	width: inherit;
 	position: absolute;
 	bottom: 0;
+	padding: 4rem 1rem;
+	font-family: 'Lato', sans-serif;
+	background: #34495e;
+	color: white;
 }
 
+.foot-content {
+	margin-bottom: 2.5rem;
+}
+
+.foot-content h4 {
+	margin-bottom: 1.5rem;
+}
+
+.foot-content p {
+	margin-bottom: 0.75rem;
+}
+
+.foot-content a {
+	transition: all 0.5s ease;
+}
+
+
+.social-link {
+	margin-right: 0.625rem;
+	color: white;
+}
+
+.social-link:last-of-type {
+	margin: 0;
+}
+
+
+#fb_button:hover {
+	color: #0084ff;
+}
+
+#twitter_button:hover {
+	color: #55acee;
+}
+
+#youtube_button:hover {
+	color: #cd201f;
+}
+
+#instagram_button:hover {
+	color: #e4405f;
+}
+
+
+.links ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.links ul li {
+	margin: 1rem;
+}
+
+.links ul li a {
+	text-decoration: none;
+	color: darkgray;
+	transition: all 0.5s ease;
+}
+
+.links ul li a:hover,
+.links ul li a:active {
+	color: white;
+}
+
+
+footer .row:last-of-type {
+	margin-top: 1.5rem;
+	color: gray;
+}
+
+footer .row:last-of-type span {
+	margin: auto;
+}
+
+
+
+
+/* ====================================
+	 Home page (index.php)
+	 ==================================== */
 
 /* ----------------
 	 Main Banner
@@ -47,6 +145,7 @@ footer {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	padding-bottom: 5rem;
 	transform: translate(-50%, -50%);
 }
 
@@ -184,96 +283,10 @@ footer {
 
 
 
-/* ----------------
-	 Footer
-	 ---------------- */
-footer {
-	padding: 4rem 1rem;
-	font-family: 'Lato', sans-serif;
-	background: #34495e;
-	color: white;
-}
 
-.foot-content {
-	margin-bottom: 2.5rem;
-}
-
-.foot-content h4 {
-	margin-bottom: 1.5rem;
-}
-
-.foot-content p {
-	margin-bottom: 0.75rem;
-}
-
-.foot-content a {
-	transition: all 0.5s ease;
-}
-
-
-.social-link {
-	margin-right: 0.625rem;
-	color: white;
-}
-
-.social-link:last-of-type {
-	margin: 0;
-}
-
-
-#fb_button:hover {
-	color: #0084ff;
-}
-
-#twitter_button:hover {
-	color: #55acee;
-}
-
-#youtube_button:hover {
-	color: #cd201f;
-}
-
-#instagram_button:hover {
-	color: #e4405f;
-}
-
-
-.links ul {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	list-style-type: none;
-}
-
-.links ul li {
-	margin: 1rem;
-}
-
-.links ul li a {
-	text-decoration: none;
-	color: darkgray;
-	transition: all 0.5s ease;
-}
-
-.links ul li a:hover,
-.links ul li a:active {
-	color: white;
-}
-
-
-footer .row:last-of-type {
-	margin-top: 1.5rem;
-	color: gray;
-}
-
-footer .row:last-of-type span {
-	margin: auto;
-}
-
-
+/* ====================================
+	 Result page (result2.php)
+	 ==================================== */
 
 /* ----------------
 	 Navbar
@@ -340,7 +353,6 @@ footer .row:last-of-type span {
 nav button {
 	font-weight: 700 !important;
 }
-
 
 
 

@@ -80,8 +80,9 @@
 <?php require('includes/menuModal.php'); ?>
 
 
-<!-- Custom Script -->
-<script src=js/common.js></script>
+
+<!-- Common Custom Script -->
+<script type="text/javascript" src=js/common.js></script>
 
 </body>
 
