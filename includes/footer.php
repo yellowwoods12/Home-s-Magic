@@ -19,13 +19,13 @@
 
       <div class="col-md-4 foot-content">
         <h4>Follow Us:</h4>
-        <a href="#" class="sm_button" id="fb_button">
+        <a href="#" class="social-link" id="fb_button">
           <i class="fab fa-facebook-square fa-2x"></i></a>
-        <a href="#" class="sm_button" id="twitter_button">
+        <a href="#" class="social-link" id="twitter_button">
           <i class="fab fa-twitter-square fa-2x"></i></a>
-        <a href="#" class="sm_button" id="youtube_button">
+        <a href="#" class="social-link" id="youtube_button">
           <i class="fab fa-youtube fa-2x"></i></a>
-        <a href="#" class="sm_button" id="instagram_button">
+        <a href="#" class="social-link" id="instagram_button">
           <i class="fab fa-instagram fa-2x"></i></a>
       </div>
     </div>

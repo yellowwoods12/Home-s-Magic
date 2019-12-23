@@ -4,6 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+<!-- Webpage Icon -->
+<link rel="icon" type="image/x-icon" href="../favicon.png" />
+
 <!-- Bootstrap 4.4.1 minified Stylesheet -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- Custom Stylesheet -->
@@ -18,6 +21,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine">
 
 <!-- jQuery 3.4.1 minified Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>

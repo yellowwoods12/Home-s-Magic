@@ -103,7 +103,7 @@
 <!-- JavaScript plugin for Banner Typewriter heading -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
 <!-- Custom Script -->
-<script src=js/custom.js></script>
+<script src=js/index.js></script>
 
 </body>
 
