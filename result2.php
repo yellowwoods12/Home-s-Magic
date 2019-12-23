@@ -29,8 +29,18 @@
 
 <body id="result_bg">
 
-<!-- Navbar -->
-<?php require('includes/navbar.php'); ?>
+<div class="page-container">
+  <div class="content-wrap">
+    <!-- Navbar -->
+    <?php require('includes/navbar.php'); ?>
+
+    
+  </div>
+
+
+  <!-- Footer -->
+  <?php require('includes/footer.php'); ?>
+</div>
 
 
 <div class="container-fluid result-list">
@@ -57,10 +67,6 @@
       }
     */?>
 </div>
-
-
-<!-- Footer -->
-<?php require('includes/footer.php'); ?>
     
     
 <!-- modal for Sign Up -->
@@ -72,6 +78,10 @@
 
 <!-- modal for Menu -->
 <?php require('includes/menuModal.php'); ?>
+
+
+<!-- Custom Script -->
+<script src=js/common.js></script>
 
 </body>
 

@@ -7,6 +7,22 @@ html, body {
 	background: url("../Images/bg-white-tex.jpg");
 }
 
+.page-container {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+.content-wrap {
+	width: inherit;
+}
+
+footer {
+	width: inherit;
+	position: absolute;
+	bottom: 0;
+}
+
 
 /* ----------------
 	 Main Banner
