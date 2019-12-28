@@ -324,13 +324,15 @@ footer .row:last-of-type span {
 	text-align: center;
 }
 
-.dropdown-menu li {
-	padding: 0.5rem 1rem;
+.dropdown-menu ul {
+	min-width: 12rem !important;
+	padding: 0;
+	list-style: none;
 }
 
-.dropdown-menu li:hover,
-.dropdown-menu li:active {
-	background: aliceblue;
+.dropdown-menu li {
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
 }
 
 .dropdown-menu li a {
@@ -351,9 +353,144 @@ footer .row:last-of-type span {
 }
 
 nav button {
+	font-family: 'Titillium Web', sans-serif;
 	font-weight: 700 !important;
 }
 
+
+
+/* ----------------
+	 Search Bar
+	 ---------------- */
+.search-bar {
+	margin: 2rem auto;
+	padding: 1rem 3rem;
+	border-radius: 0.5rem;
+	font-family: 'Lato', sans-serif;
+	background-color: rgba(211, 211, 211, 0.5);
+}
+
+
+
+/* ----------------
+	 Result List
+	 ---------------- */
+.result-list {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+}
+
+.result-item {
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border: 1px solid lightgrey;
+	border-radius: 0.5rem;
+	font-family: 'Lato', sans-serif;
+	background: repeating-linear-gradient(
+  	-45deg,
+  aliceblue,
+  aliceblue 10px,
+  white 10px,
+  white 20px
+	);
+}
+
+.result-item:last-of-type {
+	margin-bottom: 0;
+}
+
+.result-item > div:nth-of-type(1),
+.result-item > div:nth-of-type(2),
+.result-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.result-item i {
+	color: gray;
+}
+
+.result-img {
+	margin: 0.5rem 0;
+}
+
+.result-info > * {
+	margin: 0.25rem 0;
+}
+
+.result-info > p:first-child {
+	margin-top: 0.5rem;
+	font-weight: 700;
+}
+
+.result-info > p:last-child {
+	margin-bottom: 0.5rem;
+}
+
+.result-info i {
+	margin-right: 1rem;
+}
+
+.result-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.result-quote,
+.result-buttons {
+	margin: 0.5rem 0;
+}
+
+.result-quote > * {
+	display: block;
+}
+
+.result-quote > i:first-of-type {
+	text-align: left;
+}
+
+.result-quote > p {
+	margin: 0;
+	padding: 0.5rem 1.5rem;
+	font-size: 1rem;
+	font-style: italic;
+	text-align: center;
+}
+
+.result-quote > i:last-of-type {
+	text-align: right;
+}
+
+.result-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.result-buttons button {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 700 !important;
+}
+
+.result-none {
+	padding: 2rem;
+	border: 1px solid lightgrey;
+	border-radius: 0.5rem;
+	background: white;
+}
+
+.result-none p {
+	width: 100%;
+	margin: 0;
+	font-size: 1.2rem;
+	text-align: center;
+	color: dimgray;
+}
 
 
 

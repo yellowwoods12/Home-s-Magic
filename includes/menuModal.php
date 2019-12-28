@@ -1,4 +1,3 @@
-<!-- modal for Menu -->
 <div id="menuModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="menuModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
