@@ -19,12 +19,12 @@
 <body id="result_bg">
 
 <div class="page-container">
+  <!-- Navbar -->
+  <?php require('includes/navbar.php'); ?>
+
+
+  <!-- Page Main Content -->
   <div class="content-wrap">
-    <!-- Navbar -->
-    <?php require('includes/navbar.php'); ?>
-
-
-    <!-- Review -->
     <div class="container review">
       <div class="row">
         <div class="col-lg-4 offset-md-0 col-md-5 offset-sm-1 col-sm-10 restaurant-details">

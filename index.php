@@ -18,6 +18,7 @@
 <body>
 
 <div class="page-container">
+  <!-- Page Main Content -->
   <div class="content-wrap">
     <!-- Main Banner -->
     <div class="banner text-center">

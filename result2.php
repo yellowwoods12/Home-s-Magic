@@ -19,14 +19,15 @@
 <body id="result_bg">
 
 <div class="page-container">
+  <!-- Navbar -->
+  <?php require('includes/navbar.php'); ?>
+
+
+  <!-- Page Main Content -->
   <div class="content-wrap">
-    <!-- Navbar -->
-    <?php require('includes/navbar.php'); ?>
-
-
     <!-- Search Bar -->
     <div class="container search-bar">
-      <form method="GET" action="<?php echo htmlspecialchars($_SERVER['SELF']); ?>">
+      <form method="GET" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text">Search</span>

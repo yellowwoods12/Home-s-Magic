@@ -65,7 +65,12 @@ function get_locality_dropdown() {
         $city_id = $row['city_id'];
         $city_name = $row['city_name'];
 
-        echo "<li><a href='result2.php?city_id_url=$city_id'>$city_name</a></li>";
+        echo "
+        <li class='dropdown-item'>
+          <a href='result2.php?city_id_url=$city_id'>
+            $city_name
+          </a>
+        </li>";
     }
 }
 
@@ -80,7 +85,12 @@ function get_cuisine_dropdown() {
         $cuisine_id = $row['cuisine_id'];
         $cuisine_name = $row['cuisine_name'];
 
-        echo "<li><a href='result2.php?cuisine_url=$cuisine_id'>$cuisine_name</a></li>";
+        echo "
+        <li class='dropdown-item'>
+          <a href='result2.php?cuisine_url=$cuisine_id'>
+            $cuisine_name
+          </a>
+        </li>";
     }
 }
 

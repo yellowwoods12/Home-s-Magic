@@ -20,9 +20,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
 
 <!-- jQuery 3.4.1 minified Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>

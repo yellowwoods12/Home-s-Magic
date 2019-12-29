@@ -120,89 +120,105 @@ footer .row:last-of-type span {
 /* ----------------
 	 Navbar
 	 ---------------- */
-	 nav {
-		box-shadow: 0 1px 4px darkgrey;
-	}
-	
-	.navbar-brand {
-		margin-right: 2rem;
-		padding: 0.5rem 1.25rem;
-		border-radius: 1.8rem;
-		font-family: 'Acme', sans-serif;
-		font-size: 1.75rem;
-		line-height: 1.5;
-		background: darkorange;
-		color: white !important;
-	}
-	
-	.navbar-collapse {
-		justify-content: space-between;
-	}
-	
-	.navbar-nav > * {
-		margin: 0.5rem;
-		font-family: 'comfortaa', cursive;
-	}
-	
-	.navbar-nav {
-		margin: 0 1rem;
-	}
-	
-	.navbar-nav li {
-		font-size: 1.25rem;
-	}
-	
-	
-	.dropdown-menu {
-		text-align: center;
-	}
-	
-	.dropdown-menu ul {
-		min-width: 12rem !important;
-		padding: 0;
-		list-style: none;
-	}
-	
-	.dropdown-menu li {
-		padding: 0.5rem 1rem;
-		font-size: 1rem;
-	}
-	
-	.dropdown-menu li a {
-		text-decoration: none;
-		color: dimgray;
-	}
-	
-	.dropdown-menu li a:hover,
-	.dropdown-menu li a:active {
-		color: black;
-	}
-	
-	
-	.nav-greet {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	
-	nav button {
-		font-family: 'Titillium Web', sans-serif;
-		font-weight: 700 !important;
-	}
+nav {
+	padding: 0 !important;
+	box-shadow: 0 1px 4px darkgrey;
+}
+
+.navbar-brand {
+	margin-right: 2rem;
+	padding: 0.25rem 1.25rem;
+	border-radius: 1.8rem;
+	font-family: 'Acme', sans-serif;
+	font-size: 1.625rem;
+	line-height: 1.5;
+	background: darkorange;
+	color: white !important;
+	transition: all 0.25s ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+	background: orange;
+}
+
+.navbar-collapse {
+	justify-content: space-between;
+}
+
+.navbar-collapse ul:last-child,
+.navbar-collapse ul li:last-child {
+	margin-right: 0;
+}
+
+.navbar-nav {
+	margin: 0 1rem;
+}
+
+.navbar-nav > * {
+	margin: 0.5rem;
+}
+
+.navbar-nav:first-of-type > * {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2rem;
+}
+
+.navbar-nav:last-of-type > * {
+	font-family: 'Comfortaa', cursive;
+	font-size: 1.1rem;
+}
+
+
+.dropdown-menu {
+	text-align: center;
+}
+
+.dropdown-menu ul {
+	padding: 0;
+	list-style: none;
+}
+
+.dropdown-item {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1rem;
+}
+
+.dropdown-item a {
+	text-decoration: none;
+	color: dimgray;
+}
+
+.dropdown-item a:hover,
+.dropdown-item a:active {
+	color: black;
+}
+
+
+.nav-greet {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+nav button {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700 !important;
+}
 
 
 
 	/* ----------------
 	 	 Review Modal
 		 ---------------- */
-	.form-group #rating {
-		display: block;
-		color: #f80;
-	}
+.form-group #rating {
+	display: block;
+	color: #f80;
+}
 
-	#rating .stars {
-		cursor: pointer;
-	}
+#rating .stars {
+	cursor: pointer;
+}
 	
 	
 	
