@@ -3,4 +3,9 @@ $(document).ready(() => {
     $(".content-wrap").css({
         "padding-bottom":$("footer").outerHeight()
     });
+
+    // Page content padding top for navbar
+    $(".content-wrap").css({
+        "padding-top":$("nav").outerHeight()
+    });
 })

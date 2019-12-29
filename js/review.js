@@ -1,54 +1,36 @@
-var rating=0;
+var rating = 0;
 
-$('document').ready(function(){
-      $('.stars').mouseenter(
-        function()
-        {
-          var index = $('.stars').index(this);
-          if(rating==0)
-          {
-            for(i=0;i<=index;i++)
-            {
-            $('.stars:eq('+i+')').removeClass('fa-star-o');
-            $('.stars:eq('+i+')').addClass('fa-star');
-            }
-          }
-        }
-      );
+// review ratng events
+$('.stars').mouseenter(event => {
+    if (rating == 0)
+        fillStars($(event.target).index());
+});
 
-      $('.stars').mouseleave(
-        function()
-        {
-          var index = $('.stars').index(this);
-          if(rating==0)
-          {
-            for(i=0;i<=index;i++)
-            {
-            $('.stars:eq('+i+')').addClass('fa-star-o');
-            $('.stars:eq('+i+')').removeClass('fa-star');
-            }
-          }
-        }
-      );
+$('.stars').mouseleave(event => {
+    if (rating == 0)
+        fillStars(-1);
+});
 
-       $('.stars').on('click',
-        function()
-        {
-          var index = $('.stars').index(this);
-          rating = Number(index)+1;
-          for(i=0;i<=index;i++)
-          {
-          $('.stars:eq('+i+')').removeClass('fa-star-o');
-          $('.stars:eq('+i+')').addClass('fa-star');
-          }
-          for(i=index+1;i<=4;i++)
-            {
-            $('.stars:eq('+i+')').removeClass('fa-star');
-            $('.stars:eq('+i+')').addClass('fa-star-o');
-            }
-        }
-      );
-  }) ;
+$('.stars').click( event => {
+    var index = $(event.target).index();
+
+    fillStars(index);
+    rating = Number(index) + 1;
+});
+
+// utility function to fill in solid stars
+function fillStars(index) {
+    for (i = 0; i <= index; i++) {
+        $('.stars:eq(' + i + ')').addClass('fas');
+        $('.stars:eq(' + i + ')').removeClass('far');
+    }
+
+    for (i = index + 1; i < 5; i++) {
+        $('.stars:eq(' + i + ')').addClass('far');
+        $('.stars:eq(' + i + ')').removeClass('fas');
+    }
+}
+
 
 
 function submit_review(rest_id)

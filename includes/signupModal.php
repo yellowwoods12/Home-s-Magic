@@ -50,7 +50,7 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="register_details()">
+        <button type="submit" class="btn btn-primary" onclick="register_details()">
           Sign Up
         </button>
       </div>

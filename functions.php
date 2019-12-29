@@ -421,8 +421,10 @@ function showOrderSummary()
 }
 
 
-function reviewDisplay()
-{
+
+
+// fetches and creates container of the restaurant being reviewed
+function getReviewRestaurant() {
     $rest_id = $_GET['rest_id_url'];
     $rest_name = $_GET['rest_name_url'];
     $rest_address = $_GET['rest_address_url'];
@@ -432,64 +434,54 @@ function reviewDisplay()
     $rest_speciality = $_GET['rest_speciality_url'];
 
     echo "
-    <img class='img-rounded' width='350' height='300' src='Images/$rest_img'>
-    <b><p class='rest-addr' style='margin-top:20px;'>$rest_name</p></b>
-    <p class='rest-addr'>$rest_address</p>
-    <table>
-    <tr>
-        <td><p class='rest-addr' style='float:right;'><i class='fa fa-cutlery' aria-hidden='true'></i></p></td>
-        <td><p class='rest-addr' style='padding-left:10px;'>$rest_speciality</p></td>
-    </tr>
+    <div class='result-img'>
+      <img src='Images/$rest_img' class='img-thumbnail rest-img'>
+    </div>
 
-    <tr>
-        <td><p class='rest-addr' style='float:right;'><i class='fa fa-phone' aria-hidden='true'></i></p></td>
-        <td><p class='rest-addr' style='padding-left:10px;'>$rest_phone</p></td>
-    </tr>
-
-    <tr>
-        <td><p class='rest-addr' style='float:right;'><i class='fa fa-envelope' aria-hidden='true'></i></p></td>
-        <td><p class='rest-addr' style='padding-left:10px;'>$rest_mail</p></td>
-    </tr>
-    </table>
-    ";
-
+    <div class='result-info'>
+      <p>$rest_name</p>
+      <p>$rest_address</p>
+      <p><i class='fas fa-utensils'></i>&nbsp;$rest_speciality</p>
+      <p><i class='fas fa-phone'></i>$rest_phone</p>
+      <p><i class='fas fa-envelope'></i>$rest_mail</p>
+    </div>";
 }
 
-function showReview()
-{
+
+// fetches and creates review containers of the restaurant being reviewed
+function getRestaurantReviews() {
     global $con;
-    $rest_id = (int)$_GET['rest_id_url'];
-    $review_query = "SELECT * FROM review where rest_id=$rest_id";
-    $exec_review_query = mysqli_query($con,$review_query);
-    while($row = mysqli_fetch_array($exec_review_query))
-    {
-        $cust_id = (int)$row['cust_id'];
+
+    $rest_id = (int) $_GET['rest_id_url'];
+    $review_query = "SELECT * FROM review WHERE rest_id = $rest_id";
+    $exec_review_query = mysqli_query($con, $review_query);
+    
+    while ($row = mysqli_fetch_array($exec_review_query)) {
+        $cust_id = (int) $row['cust_id'];
         $title = $row['title'];
-        $rating = (int)$row['rating'];
+        $rating = (int) $row['rating'];
         $review = $row['review'];
-        $getName = "SELECT cust_fname,cust_lname from customer where cust_id=$cust_id";
-        $exec_getname = mysqli_query($con,$getName);
-        while($row1=mysqli_fetch_array($exec_getname))
-        {
+
+        $getName = "SELECT cust_fname, cust_lname FROM customer WHERE cust_id = $cust_id";
+        $exec_getname = mysqli_query($con, $getName);
+        
+        while ($row1 = mysqli_fetch_array($exec_getname)) {
             $fname = $row1['cust_fname'];
             $lname = $row1['cust_lname'];
         }
-        echo "<div class='row review-wrapper'>";
-        echo "<div class='col-lg-offset-1 col-lg-10'>";
-        echo "<h3>$title</h3>";
-        echo "<h4><span style='color:#ff8000;'>";
-        for($x=1;$x<=$rating;$x++)
-        {
-            echo "<i class='fa fa-star' aria-hidden='true'></i>";
-        }
-        for($x=$rating+1;$x<=5;$x++)
-        {
-            echo "<i class='fa fa-star-o' aria-hidden='true'></i>";
-        }
-        echo "</span></h4>";
-        echo "<h4>$review</h4>";
-        echo "<p class='cust-name-review'> - ".$fname." ".$lname."</p>";
-        echo "</div></div>";
+
+        echo "
+        <div class='review-item'>
+          <p>$title</p>
+          <p class='rating'>";
+            for ($i = 1; $i <= $rating; $i++)
+                echo "<i class='fas fa-star'></i>";
+            for ($i = 1; $i <= 5 - $rating; $i++)
+                echo "<i class='far fa-star'></i>";
+          echo "</p>
+          <p>$review</p>
+          <p>$fname&nbsp;$lname</p>
+        </div>";
     }
 }
 
