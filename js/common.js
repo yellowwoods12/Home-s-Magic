@@ -1,11 +1,13 @@
-$(document).ready(() => {
-    // Page content padding bottom for footer
-    $(".content-wrap").css({
-        "padding-bottom":$("footer").outerHeight()
-    });
+$(document).ready(adjustSpacing);
 
-    // Page content padding top for navbar
+$(window).on('resize', adjustSpacing);
+
+// Adjusts spacing for navbar and footer
+function adjustSpacing() {
     $(".content-wrap").css({
+        // Page content padding bottom for footer
+        "padding-bottom":$("footer").outerHeight(),
+        // Page content padding top for navbar
         "padding-top":$("nav").outerHeight()
     });
-})
+}

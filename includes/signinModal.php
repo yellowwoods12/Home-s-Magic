@@ -6,8 +6,8 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       
-      <div class="modal-body">
-        <form id="LoginForm" method="POST">
+      <form id="LoginForm" method="POST">
+        <div class="modal-body">
           <div class="form-group">
             <label for="login_email">Email address:</label>
             <input type="email" class="form-control" id="login_email" placeholder="Email">
@@ -19,14 +19,14 @@
           </div>
          
           <div id="loginStatus"></div>
-        </form>
-      </div>
+        </div>
       
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary" onclick="login()">
-          Log In
-        </button>
-      </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" onclick="login()">
+            LOG IN
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

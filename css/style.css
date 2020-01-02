@@ -30,7 +30,7 @@ footer {
 	width: inherit;
 	position: absolute;
 	bottom: 0;
-	padding: 4rem 1rem;
+	padding: 3rem 1rem;
 	font-family: 'Lato', sans-serif;
 	background: #34495e;
 	color: white;
@@ -207,10 +207,19 @@ nav button {
 }
 
 
+/* ----------------
+ 	 Modal
+	 ---------------- */
+.modal button {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700 !important;
+}
 
-	/* ----------------
-	 	 Review Modal
-		 ---------------- */
+
+
+/* ----------------
+ 	 Review Modal
+	 ---------------- */
 .form-group #rating {
 	display: block;
 	color: #f80;
@@ -474,8 +483,8 @@ nav button {
 }
 
 .result-quote,
-.result-buttons {
-	margin: 0.5rem 0;
+.result-button {
+	margin: 1rem 0;
 }
 
 .result-quote > * {
@@ -498,14 +507,13 @@ nav button {
 	text-align: right;
 }
 
-.result-buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+.result-button {
+	display: grid;
+	justify-content: end;
 	align-items: center;
 }
 
-.result-buttons button {
+.result-button button {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 0.9rem;
 	font-weight: 700 !important;
@@ -551,6 +559,7 @@ nav button {
 
 .restaurant-details > div {
 	display: block;
+	margin: 0 auto 0.5rem auto;
 	padding: 1.5rem;
 	border: 1px solid lightgrey;
 	border-radius: 0.5rem;
@@ -559,9 +568,15 @@ nav button {
 }
 
 .restaurant-details > div:first-child {
-	margin: 0 auto 0.5rem auto;
 	padding: 0;
 	border: none;
+}
+
+.restaurant-details button {
+	width: inherit;
+	margin: auto;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700 !important;
 }
 
 

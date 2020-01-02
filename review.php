@@ -43,8 +43,7 @@
                 </button>";
             
               else
-                echo "
-                <p>Login to add review</p>";
+                echo "<p>Login to add review</p>";
             ?>
           </div>
         </div>
@@ -68,6 +67,9 @@
 
 <!-- modal for Review -->
 <?php require('includes/reviewModal.php'); ?>
+
+<!-- modal for Order -->
+<?php require('includes/orderModal.php'); ?>
 
 
 

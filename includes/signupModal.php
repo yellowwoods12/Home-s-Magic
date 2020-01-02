@@ -8,8 +8,8 @@
         </button>
       </div>
 
-      <div class="modal-body">
-        <form id="signupForm" method="POST">
+      <form id="signupForm" method="POST">
+        <div class="modal-body">
           <div class="form-group">
             <label for="fname">First Name:</label>
             <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
@@ -46,14 +46,14 @@
           </div>
 
           <div id="status"></div>
-        </form>
-      </div>
+        </div>
 
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary" onclick="register_details()">
-          Sign Up
-        </button>
-      </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" onclick="register_details()">
+            SIGN UP
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

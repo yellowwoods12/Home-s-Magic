@@ -80,10 +80,6 @@
 <?php require('includes/signinModal.php'); ?>
 
 
-<!-- modal for Menu -->
-<?php require('includes/menuModal.php'); ?>
-
-
 
 <!-- Common Custom Script -->
 <script type="text/javascript" src=js/common.js></script>

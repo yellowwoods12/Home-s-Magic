@@ -113,7 +113,7 @@ function getByCity($cid) {
             $rest_desc = $row['rest_desc'];
             $rest_img = $row['rest_img'];
 
-            include('includes/result-item.php');
+            include('includes/resultItem.php');
         }
     }
 
@@ -151,7 +151,7 @@ function getByCuisine($cid) {
             $rest_desc = $row['rest_desc'];
             $rest_img = $row['rest_img'];
 
-            include('includes/result-item.php');
+            include('includes/resultItem.php');
         }
     }
 
@@ -188,7 +188,7 @@ function getBySearch($cid) {
             $rest_desc = $row['rest_desc'];
             $rest_img = $row['rest_img'];
 
-            include('includes/result-item.php');
+            include('includes/resultItem.php');
         }
     }
 
@@ -202,111 +202,48 @@ function getBySearch($cid) {
 }
 
 
-
-
-function getMenu()
-{
+// creates content for order modal
+function getOrder() {
     global $con;
-    if(isset($_GET['rest_id_url']))
-    {
-        $var = $_GET['rest_id_url'];
-        $city_query = "SELECT * FROM restaurant where rest_id=$var";
-        $exec_city_query = mysqli_query($con,$city_query);
-        while($row1=mysqli_fetch_array($exec_city_query))
-        {
-            $rest_name = $row1['rest_name'];
-        }
-        echo "<h1 class='text-center'>$rest_name</h1>";
 
-        echo "<div class='container'>";
-        echo "<div class='row col-lg-offset-3 col-lg-6'>";
-        echo"
-        <table class='table table-bordered menu-table'>
-        <thead>
-           <tr>
-                <th>Item name</th>
-                <th>Item Price</th>
-          </tr>
-        </thead>
-          <tbody>";
+    $var = $_GET['rest_id_url'];
+    $menu_query = "SELECT * FROM menu WHERE rest_id = $var";
+    $exec_menu_query = mysqli_query($con, $menu_query);
 
-        $menu_query = "SELECT * FROM menu where rest_id=$var";
-        $exec_menu_query = mysqli_query($con,$menu_query);
-        while($row2=mysqli_fetch_array($exec_menu_query))
-        {
-            $menu_name = $row2['menu_name'];
-            $menu_price = $row2['menu_price'];
-            echo
-            "
-            <tr>
-                <td>$menu_name</td>
-                <td>Rs.$menu_price</td>
-              </tr>
-            ";
-        }
+    echo"
+    <table class='table table-bordered menu-table' style='text-align:center;'>
+      <thead>
+        <tr>
+          <th class='text-center'>Item name</th>
+          <th class='text-center'>Item Price (&#8377;)</th>
+          <th class='text-center'>Quantity</th>
+        </tr>
+      </thead>
+      
+      <tbody>";
+
+    while ($row = mysqli_fetch_array($exec_menu_query)) {
+        $menu_id = $row['menu_id'];
+        $menu_name = $row['menu_name'];
+        $menu_price = $row['menu_price'];
+        
         echo "
         <tr>
-                <td colspan='2' style='text-align:center;'><input type='button' class='btn btn-default' value='Back' onclick='window.history.go(-1)'></td>
-        </tr>
-        </tbody>
-</table>";
- echo "</div></div>";
+          <td class='item-name'>$menu_name</td>
+          <td class='item-price'>$menu_price</td>
+          <td>
+            <input type='number' class='item-quantity' placeholder='0' min='0' max='20'/>
+          </td>
+        </tr>";
     }
+    
+    echo "
+      </tbody>
+    </table>";
 }
 
-function getOrder()
-{
-    global $con;
-    if(isset($_GET['rest_id_url']))
-    {
-        $var = $_GET['rest_id_url'];
-        $city_query = "SELECT * FROM restaurant where rest_id=$var";
-        $exec_city_query = mysqli_query($con,$city_query);
-        while($row1=mysqli_fetch_array($exec_city_query))
-        {
-            $rest_name = $row1['rest_name'];
-        }
-        echo "<h1 class='text-center'>$rest_name</h1>";
 
-        echo"
-        <table class='table table-bordered menu-table' style='text-align:center;'>
-        <thead>
-           <tr>
-                   <th class='text-center'>Item ID</th>
-                <th class='text-center'>Item name</th>
-                <th class='text-center'>Item Price(&#8377;)</th>
-                <th class='text-center'>Quantity</th>
-                <th class='text-center'>Add Item</th>
-          </tr>
-        </thead>
-          <tbody>";
 
-        $menu_query = "SELECT * FROM menu where rest_id=$var";
-        $exec_menu_query = mysqli_query($con,$menu_query);
-        while($row2=mysqli_fetch_array($exec_menu_query))
-        {
-            $menu_id = $row2['menu_id'];
-            $menu_name = $row2['menu_name'];
-            $menu_price = $row2['menu_price'];
-            echo
-            "
-            <tr>
-                <td class='item-id'>$menu_id</td>
-                <td class='item-name'>$menu_name</td>
-                <td class='item-price'>$menu_price</td>
-                <td>
-                <input type='number' class='item-quantity' style='color:black;width:40px;margin-left:20px;' required='required'/>
-                </td>
-                <td><button class='btn btn-default cart'>Add</button></td>
-              </tr>
-            ";
-        }
-        echo "
-        </tbody>
-</table>";
-    echo "<div style='width:150px;margin:auto;'><input type='button' class='btn btn-default' value='ORDER FOOD'></div>";
-    }
-}
 
 function showOrder()
 {
@@ -435,13 +372,20 @@ function showOrderSummary()
 
 // fetches and creates container of the restaurant being reviewed
 function getReviewRestaurant() {
-    $rest_id = $_GET['rest_id_url'];
-    $rest_name = $_GET['rest_name_url'];
-    $rest_address = $_GET['rest_address_url'];
-    $rest_phone = $_GET['rest_phone_url'];
-    $rest_mail = $_GET['rest_mail_url'];
-    $rest_img = $_GET['rest_img_url'];
-    $rest_speciality = $_GET['rest_speciality_url'];
+    global $con;
+
+    $rest_id = (int) $_GET['rest_id_url'];
+    $rest_query = "SELECT * FROM restaurant WHERE rest_id = $rest_id";
+    $exec_rest_query = mysqli_query($con, $rest_query);
+    
+    while ($row = mysqli_fetch_assoc($exec_rest_query)) {
+        $rest_name = $row['rest_name'];
+        $rest_address = $row['rest_address'];
+        $rest_phone = $row['rest_phone'];
+        $rest_mail = $row['rest_mail'];
+        $rest_img = $row['rest_img'];
+        $rest_speciality = $row['rest_speciality'];
+    }
 
     echo "
     <div class='result-img'>
@@ -455,6 +399,12 @@ function getReviewRestaurant() {
       <p><i class='fas fa-phone'></i>$rest_phone</p>
       <p><i class='fas fa-envelope'></i>$rest_mail</p>
     </div>";
+    
+    if (isset($_SESSION['cust_log_id']))
+        echo "
+        <button class='btn btn-primary' data-toggle='modal' data-target='#orderModal'>
+          ORDER FOOD
+        </button>";
 }
 
 

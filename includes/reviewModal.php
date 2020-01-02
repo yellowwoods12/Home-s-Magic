@@ -6,8 +6,8 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       
-      <div class="modal-body">
-        <form id="ReviewForm" method="POST">
+      <form id="ReviewForm" method="POST">
+        <div class="modal-body">
           <div class="form-group">
             <label for="review-title">Title:</label>
             <input type="text" class="form-control" id="review-title" placeholder="Title">
@@ -29,14 +29,14 @@
           </div>
 
           <div id="review-status"></div>
-        </form>
-      </div>
+        </div>
       
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary" onclick="submit_review(<?php echo $_GET['rest_id_url'];?>)">
-          Submit Review
-        </button>
-      </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" onclick="submit_review(<?php echo $_GET['rest_id_url'];?>)">
+            SUBMIT REVIEW
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
