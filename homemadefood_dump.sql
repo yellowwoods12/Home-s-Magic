@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 10, 2019 at 03:11 AM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Host: localhost
+-- Generation Time: Dec 26, 2019 at 11:34 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -97,7 +97,7 @@ CREATE TABLE `customer` (
   `cust_fname` varchar(60) NOT NULL,
   `cust_lname` varchar(60) NOT NULL,
   `cust_email` text NOT NULL,
-  `cust_phone` int(15) NOT NULL,
+  `cust_phone` bigint(15) NOT NULL,
   `cust_address` text NOT NULL,
   `cust_pwd` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -150,7 +150,7 @@ CREATE TABLE `restaurant` (
   `rest_name` varchar(50) NOT NULL,
   `rest_address` text NOT NULL,
   `rest_speciality` varchar(50) NOT NULL,
-  `rest_phone` int(12) NOT NULL,
+  `rest_phone` bigint(12) NOT NULL,
   `rest_mail` text NOT NULL,
   `rest_desc` text NOT NULL,
   `rest_img` varchar(50) NOT NULL
