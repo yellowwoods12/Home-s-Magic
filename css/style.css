@@ -11,230 +11,6 @@ html, body {
 	background: url("../Images/bg-white-tex.jpg");
 }
 
-.page-container {
-	width: 100%;
-	min-height: 100vh;
-	position: relative;
-}
-
-.content-wrap {
-	width: inherit;
-}
-
-
-
-/* ----------------
-	 Footer
-	 ---------------- */
-footer {
-	width: inherit;
-	position: absolute;
-	bottom: 0;
-	padding: 3rem 1rem;
-	font-family: 'Lato', sans-serif;
-	background: #34495e;
-	color: white;
-}
-
-.foot-content {
-	margin-bottom: 2.5rem;
-}
-
-.foot-content h4 {
-	margin-bottom: 1.5rem;
-}
-
-.foot-content p {
-	margin-bottom: 0.75rem;
-}
-
-.foot-content a {
-	transition: all 0.5s ease;
-}
-
-
-.social-link {
-	margin-right: 0.625rem;
-	color: white;
-}
-
-.social-link:last-of-type {
-	margin: 0;
-}
-
-
-#fb_button:hover {
-	color: #0084ff;
-}
-
-#twitter_button:hover {
-	color: #55acee;
-}
-
-#youtube_button:hover {
-	color: #cd201f;
-}
-
-#instagram_button:hover {
-	color: #e4405f;
-}
-
-
-.links ul {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	list-style-type: none;
-}
-
-.links ul li {
-	margin: 1rem;
-}
-
-.links ul li a {
-	text-decoration: none;
-	color: darkgray;
-	transition: all 0.5s ease;
-}
-
-.links ul li a:hover,
-.links ul li a:active {
-	color: white;
-}
-
-
-footer .row:last-of-type {
-	margin-top: 1.5rem;
-	color: gray;
-}
-
-footer .row:last-of-type span {
-	margin: auto;
-}
-
-
-
-/* ----------------
-	 Navbar
-	 ---------------- */
-nav {
-	padding: 0 !important;
-	box-shadow: 0 1px 4px darkgrey;
-}
-
-.navbar-brand {
-	margin-right: 2rem;
-	padding: 0.25rem 1.25rem;
-	border-radius: 1.8rem;
-	font-family: 'Acme', sans-serif;
-	font-size: 1.625rem;
-	line-height: 1.5;
-	background: darkorange;
-	color: white !important;
-	transition: all 0.25s ease;
-}
-
-.navbar-brand:hover,
-.navbar-brand:active {
-	background: orange;
-}
-
-.navbar-collapse {
-	justify-content: space-between;
-}
-
-.navbar-collapse ul:last-child,
-.navbar-collapse ul li:last-child {
-	margin-right: 0;
-}
-
-.navbar-nav {
-	margin: 0 1rem;
-}
-
-.navbar-nav > * {
-	margin: 0.5rem;
-}
-
-.navbar-nav:first-of-type > * {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.2rem;
-}
-
-.navbar-nav:last-of-type > * {
-	font-family: 'Comfortaa', cursive;
-	font-size: 1.1rem;
-}
-
-
-.dropdown-menu {
-	text-align: center;
-}
-
-.dropdown-menu ul {
-	padding: 0;
-	list-style: none;
-}
-
-.dropdown-item {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.1rem;
-}
-
-.dropdown-item a {
-	text-decoration: none;
-	color: dimgray;
-}
-
-.dropdown-item a:hover,
-.dropdown-item a:active {
-	color: black;
-}
-
-
-.nav-greet {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-nav button {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 700 !important;
-}
-
-
-/* ----------------
- 	 Modal
-	 ---------------- */
-.modal button {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 700 !important;
-}
-
-
-
-/* ----------------
- 	 Review Modal
-	 ---------------- */
-.form-group #rating {
-	display: block;
-	color: #f80;
-}
-
-#rating .stars {
-	cursor: pointer;
-}
-	
-	
-	
-
-/* ====================================
-	 Home page (index.php)
-	 ==================================== */
 
 /* ----------------
 	 Main Banner
@@ -299,7 +75,6 @@ nav button {
 	background-size: cover;
 	cursor: pointer;
 }
-
 
 
 .headings {
@@ -650,38 +425,35 @@ nav button {
 }
 
 
-
-
-
-/*.icon-bar{
-	color:;
-}
 .cuisine-box{
 	height: auto;
 	margin-bottom: 50px;
 }
 
 .img-cuisine{
-	height:250px;
 	width: 100%;
-	border-color: black;
 	-webkit-transition-duration: 0.2s;
 }
 
 .img-cuisine:hover{
-	-webkit-transform:scale(1.1);
-	-moz-transform:scale(1.1);
-	-o-transform:scale(1.1);
-	overflow: hidden;
+	-webkit-box-shadow:0px 0px 30px 0px #d0342d;
+	border-color:#d0342d;
+	-webkit-transform:scale(1.1) !important;
+	-moz-transform:scale(1.1) !important;
+	-o-transform:scale(1.1) !important;
+	overflow: hidden !important;
 }
 
 .desc-cuisine{
 	margin-top:20px;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 .foot{
 	color:white;
-	background-color: #34495e;
+	background: #00B4DB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding-bottom: 20px;
 }
 

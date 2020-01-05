@@ -25,27 +25,7 @@ function getCity() {
 }
 
 // fetches list of cuisines available and creates cards
-function getCuisine() {
-    global $con;
 
-    $cuisine_query = "SELECT * FROM cuisine";
-    $exec_cuisine_query = mysqli_query($con, $cuisine_query);
-
-    while ($row = mysqli_fetch_array($exec_cuisine_query)) {
-        $cuisine_id = $row['cuisine_id'];
-        $cuisine_name = $row['cuisine_name'];
-        $cuisine_img = $row['cuisine_image'];
-
-        echo "
-        <div class='col-md-4'>
-          <a href='result2.php?cuisine_url=$cuisine_id' class='card'>
-            <div class='card-image-top' style='background: url(".'"css/'.$cuisine_img.'"'.") no-repeat center; background-size: cover'></div>
-            <div class='card-body text-center'>
-              <h5 class='card-title'>$cuisine_name</h5>
-            </div>
-          </a>
-        </div>";
-    }
 }
 
 
